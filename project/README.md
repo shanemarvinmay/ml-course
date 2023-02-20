@@ -4,7 +4,7 @@
     * [english version](https://www.gutenberg.org/ebooks/10)
     * esperanto versioj
         * [with english translation](http://bibleglot.com/pair/KJV/Esperanto/)
-        * [just esperanto](https://www.sacred-texts.com/bib/wb/esp/gen.htm)
+        * [just esperanto](https://www.sacred-texts.com/bib/wb/esp/)
 * ### The Jungle Book
     * [english version](https://www.gutenberg.org/ebooks/236)
     * opened the page and had google translate to esperanto
