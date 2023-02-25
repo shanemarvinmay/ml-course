@@ -1,4 +1,4 @@
-# Study Group Questions
+# Study Group Questions for Slide Deck One
 These questions are based on the slides we went over in class.
 
 ## [One](https://docs.google.com/presentation/d/10bm8ewH8R7TqmZuta_r6lK5Fl_H6ke1LPihx9a_PBrY/edit#slide=id.gb88abea73f_0_1276)
