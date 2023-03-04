@@ -104,6 +104,6 @@ What is the point of *Stochastic Gradient Descent*?
 **?** Why does this say "D + 1"? [Link](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.gba8d4a21f1_0_46) **?**
 
 ### Polling Questions
-* [Just click me to see the question.](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.gb97c1ea942_0_144)\
+* [Just click me to see the question.](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.gb97c1ea942_0_144)
 * [Illustration of polling question](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.g114c7f0866b_0_162)
     * [Polling question that goes with the illustration above](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.g114c7f0866b_0_170)
