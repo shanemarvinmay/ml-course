@@ -1,12 +1,17 @@
 # [Paper: Attention Is All You Need](https://arxiv.org/pdf/1706.03762v5.pdf)
 
 ## Abstract
-* Status quo is currently to use Convolutional Neural Networks that include an encoder and a decoder
-    * ? look up encoder and decoder ?
-    * best to connect the encoder and decoder through an *attention mechanism*
-        * ? look up attention mechanism ?
-* What's purposed is a *Transformer based solely on attention mechanisms*
-    * ? look up transformer ?
+
+* RNNs and CNNs were seen as the best
+    * They were used with encoders/decoders throughs an attention mechanism
+* 3 tasks were done
+    1. WMT 2014 Englishto-German translation task. 
+    Scored 28.4 BLEU.
+    2. WMT 2014 English-to-French translation task. f 41.8 BLEU
+    3. English constituency parsing
+* Why this is important: better job translating, and trains faster.
+* ? Maybe go over RNN, encoder, decoder, attention mechanism ?
+    * ? if time, also what each task entails and what the score means ?
 
 
 ## Introduction
@@ -77,3 +82,27 @@ Transformer
 BERT is a popular transformer
 * ? should use it for our project ?
 * can also be used as a encoder and/or decoder
+
+https://www.youtube.com/watch?v=iDulhoQ2pro
+
+sect to sect tasks (translations)
+- sequence to sequence
+
+sketch of how it works around 2:45
+
+https://www.youtube.com/watch?v=XowwKOAWYoQ
+
+* Transformer using attention
+    * Encoder (there was 6) (runs only once) (runs in parallel)
+        * Embedd the words. Turn words into 512 length vector. Goes through once.
+        * Postional Encoding. used to get information about position in the sentence. (9:50) Goes through once.
+        * Multi-Head Attention
+        * Add & Normalize
+        * Feed Forward
+        * Add & Normalize
+    * Decoder (there was 6, encoders match to all of them) (run many times) (not in parrallel during? )
+        * training
+            * Give start of sentence (few words) and cover up the rest with the mask (masking)
+        * Encodes output (labels)
+        * Multi-Head Attention of output
+        * Multi-Head Attention with input (from encoder)
