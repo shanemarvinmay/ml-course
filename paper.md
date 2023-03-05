@@ -17,7 +17,14 @@
 ## Introduction
 * Current state of the art: recurrent neural networks, long short-term memory, gated recurrent neural networks
     * advanced with encoder-decoderd architecture
-* ? don't understand 2 and 3rd paragraphs ?
+* RNN takes in the word and the hidden state (output of the word before), to get the next hidden state
+    * keeps track of these hidden states position (like in list)
+    * this means training has to be done sequentially (bad and slow)
+* Attention mechanisms help. 
+    * ? they allow modeling of dependencies without regard to the distances of input or output sequences ?
+* Transformers can train faster with higher accuracy by relying solely on the attention mechanism.
+    * more parallelization for faster training
+    * better translation
 
 ## Background
 * ? relate signals from input and output ?
@@ -75,22 +82,70 @@ Transformer
     * each word will be received from the encoder
     * decoders uses it's output as an input to itself. (like RNN)
 
-
-
 ! [Attention Mechanism described (around this time)](https://youtu.be/WCUNPb-5EYI?t=1051) !
 
 BERT is a popular transformer
 * ? should use it for our project ?
 * can also be used as a encoder and/or decoder
 
-https://www.youtube.com/watch?v=iDulhoQ2pro
 
-sect to sect tasks (translations)
-- sequence to sequence
+# [Highest level overview](https://www.youtube.com/watch?v=TQQlZhbC5ps)
 
-sketch of how it works around 2:45
+RNN is a feed foward
 
-https://www.youtube.com/watch?v=XowwKOAWYoQ
+S2S takes in a input and outputs a FIXED LENGTH VECTOR
+
+LSTM is an improved RNN. RNN has issues with long sequences.
+- Slower to train than RNN
+- Has to train sequentially and not parallel 
+
+## Transformer
+* Encoder
+* Decoder
+* Both based on self-attention
+
+### Encoder
+* Embedding
+    * Entire input sentence goes in at once
+        * gets embedded all at once
+        * embedded based on meaning and position
+            * postitioning done with even/odd sin/cos func used
+            * positioning provides context
+* Attention (timestamp 5:05 ish)
+    * tells us which words has the most todo with the word we are on.
+        * word: "red"
+        * sentence: The red house.
+        * "red" and "house" has a lot more todo with our word than "the"
+        * "The red house" -> [0.01, 0.85, 0.12]
+* Feed Forwards Neural Net
+    * turns the output of the attention block into a form that the decoder can diguest
+    * This can be done in parallel
+* ? outputs an attention vector for each work ?
+    * attention vector is multi-headed
+
+### Decoder
+* Embedding done just like the encoder, except that it encodes the translated text (output)
+    * ? Only embedds one word at a time ?
+* Attention like encoder, but still for translated text (output)
+    * Masked: the attention vector for each word only takes into account the words that came before it
+* Attention for output of *Encoder* and the translated text (output)
+* Feed Forward Neural Net
+    * like the encoder's feed forward, except it goes into a form that can either be taken in by another decoder or the *Linear Layer*
+* Linear Layer is another feed forward neural net
+    * takes the output from the decoder and exands the dimensions to the number of words in the output language
+* Softmax turns the output of the linear layer into a probability disctribution (? of the words ?)
+* output is the most probably next word (in the translated language)
+
+* Starts with start of sentence token. Finishes with end-of-sentence token.
+
+* Multi-Head Attention
+    * Attention vector will always show the word we are on as having the greatest relationship with itself.
+    * Taking multiply attention vectors, then averaging them out is the multi-head attention
+
+
+# [Deeper explaination](https://www.youtube.com/watch?v=XowwKOAWYoQ)
+
+* Links for each part. These links go to places that go into further description on that part.
 
 * Transformer using attention
     * Encoder (there was 6) (runs only once) (runs in parallel)
@@ -106,3 +161,16 @@ https://www.youtube.com/watch?v=XowwKOAWYoQ
         * Encodes output (labels)
         * Multi-Head Attention of output
         * Multi-Head Attention with input (from encoder)
+
+
+https://www.youtube.com/watch?v=iDulhoQ2pro
+
+sect to sect tasks (translations)
+* sequence to sequence
+
+sketch of how it works around 2:45
+
+
+* glove is a pretrained embedding
+
+! could be best resource for project (Pervasive Attention): https://arxiv.org/abs/1808.03867 !
