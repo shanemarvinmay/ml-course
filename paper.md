@@ -1,5 +1,11 @@
 # [Paper: Attention Is All You Need](https://arxiv.org/pdf/1706.03762v5.pdf)
 
+# Task 
+* 'you just present the paper's motivation, problem, data used, methodology, results and conclusions, followed by a short q&a if anyone has questions. 10 minutes is the time limit plus any q&a.'
+* 5 of your peers grade you based on the grading rubric below.
+* At the end of your research paper presentation you are required to also give an update on your project progress.
+* ! **Insert picture of grading rubruic here** !
+
 ## Abstract
 
 * RNNs and CNNs were seen as the best
@@ -36,9 +42,45 @@
             * ? look up multi-head attention ?
 * ? *Self-Attention* (*intra-attention*) is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence ?
     * ? look up self-attention (intra-attention) ?
-* ? End-to-end memory networks are based on a recurrent attention mechanism instead of sequencealigned recurrence and have been shown to perform well on simple-language question answering and
+* ? End-to-end memory networks are based on a recurrent attention mechanism instead of sequence aligned recurrence and have been shown to perform well on simple-language question answering and
 language modeling tasks ?
+     * End-to-end is recurrent on the attention mechanism, NOT the sequenced aligned accurance (hidden layer stuff)
 
+## Model Architecture
+* ? given input *($x_1$, ..., $x_n$)*, output *($y_1$, ..., $y_n$)*. Labels are *($z_1$, ..., $z_n$)*
+* Auto regressive means that future predictions are based off passed values
+* 6 encoders are fully connected to 6 decoders
+### Encoders and Decoder Stacks
+#### Encoder
+* 6 encoders were used
+* Made of 2 sub layers
+    1. Multi-Head self-attention mechanism
+    2. Position-Wise fully connected feed-forward network
+* ? 'Residual Connection' ? (untouched by layer) wraps around each layer
+* After each layer, the 'residual connection' (untouched by layer) and the output from ther layer are normalized
+    * *LayerNorm(x + Sublayer(x))*
+        * *Sublayer(x)* is the function the sub-layer performs
+#### Decoder
+* 6 decoders were used
+* simular 2 sub layers as the encoder with one additional one.
+    * Differences
+        * one of the sublayers take in the output from the encoder
+        * Masking is used. (can't see the words left of the one we are on)
+### Attention
+* Query, key, and value are mapped to an output
+* Everything is a vector
+* ' The output is computed as a weighted sum
+of the values, where the weight assigned to each value is computed by a compatibility function of the
+query with the corresponding key'
+#### Scaled Dot-Product Attention
+* query and keys ($d_k$)
+* values ($d_v$)
+* dot product of query and every key
+* divided each dot product by sqrt of $d_k$
+* apply softmax to get values of the weights
+* Additive is better but slower
+    * dividing by the sqrt  of $d_k$
+    * this is because multiplying explodes the values and goes into areas it shouldn't
 
 
 RNN
