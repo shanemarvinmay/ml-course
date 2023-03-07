@@ -11,7 +11,7 @@
 * RNNs and CNNs were seen as the best
     * They were used with encoders/decoders throughs an attention mechanism
 * 3 tasks were done
-    1. WMT 2014 Englishto-German translation task. 
+    1. WMT 2014 English-to-German translation task. 
     Scored 28.4 BLEU.
     2. WMT 2014 English-to-French translation task. f 41.8 BLEU
     3. English constituency parsing
@@ -67,6 +67,10 @@ language modeling tasks ?
         * one of the sublayers take in the output from the encoder
         * Masking is used. (can't see the words left of the one we are on)
 ### Attention
+* How relavant word in a sentence are to eachother. Which gives us context
+    * "The big red monster ate brocoli and he hated it."
+        * What is "it" refering to? Attention is our way to knowing that it refering to brocoli. 
+            * Also how we know "red" has to do with "monster" than any other word.
 * Query, key, and value are mapped to an output
 * Everything is a vector
 * ' The output is computed as a weighted sum
@@ -79,8 +83,22 @@ query with the corresponding key'
 * divided each dot product by sqrt of $d_k$
 * apply softmax to get values of the weights
 * Additive is better but slower
+    * this is because multiplying grows larger in magnitude and pushed the softmax function into regions with small gradients.
     * dividing by the sqrt  of $d_k$
-    * this is because multiplying explodes the values and goes into areas it shouldn't
+#### Multi-Head Attention
+* The *Linear* part takes the query, keys, and values and projects them 8 times with different learned linear projects.
+    * Takes the the matrix representing query (or key or values) and multiplies by the model (weights) matrix.
+    * Then splits into 8 equal section.
+    * ! Since each section can run in parallel, this is a place where a lot of time is saved. !
+* Scaled Dot-Product from before is performed
+* Concatenates the 8 outputs
+* Linear Projection happens on the concatenated output.
+#### Applications of Attention in our Model
+* Self-Attention Layers are the first layers in the encoder/decoder
+    * Encoder self-attention: Each position can attend to each position from the previous layer
+    * Decoder: Same as encoder but the right side is masked
+* Queries come from previous decoder layer
+* Keys and values come from the encoder
 
 
 RNN
