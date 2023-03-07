@@ -15,7 +15,7 @@ What is Bag of Words?
 * [Answer from slides](https://docs.google.com/presentation/d/10bm8ewH8R7TqmZuta_r6lK5Fl_H6ke1LPihx9a_PBrY/edit#slide=id.g201448386ee_0_26)
 * [Example](https://docs.google.com/presentation/d/10bm8ewH8R7TqmZuta_r6lK5Fl_H6ke1LPihx9a_PBrY/edit#slide=id.g2021d0c3995_0_47)
     * What is the difference between Bag of Words and One-Hot Encoding?
-    * What would be the Bag of Words from of D3 ("Dog eats meat.")?
+    * What would be the Bag of Words from of D3 ("Dog eats meat.")? (N is still 2)
         * Remember: dog = 1, bites = 2, man = 3, meat = 4 , food = 5, eats = 6
 
 What is Bag of N-Grams (BoN)?
@@ -32,7 +32,7 @@ What is TF-IDF?
     * D2 Man bites dog.
     * D3 Dog eats meat.
     * D4 Man eats food.
-    * What is the TF-IDF for "eats"?
+    * What is the TF-IDF for i = "eats" and j = D3?
 
 What is Word2Vec?
 * [Answer first deck of slides](https://docs.google.com/presentation/d/10bm8ewH8R7TqmZuta_r6lK5Fl_H6ke1LPihx9a_PBrY/edit#slide=id.g201448386ee_0_46)
