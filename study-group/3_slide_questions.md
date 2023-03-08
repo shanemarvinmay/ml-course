@@ -19,11 +19,9 @@ What are the building blocking of a *learning algorithm*?
 * [Answer](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.p19)
 
 What is *optimization* in ML?
+* What is *Gradient Descent*?
+    * Why do you think it is called descent?
 * [Answer](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.p21)
-
-What is *Gradient Descent*?
-* [Answer](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.p21)
-* Why do you think it is called descent?
 
 What is *Linear Regression*?
 * [Answer](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.gba8d4a21f1_0_3)
@@ -104,6 +102,17 @@ What is the point of *Stochastic Gradient Descent*?
 **?** Why does this say "D + 1"? [Link](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.gba8d4a21f1_0_46) **?**
 
 ### Polling Questions
-* [Just click me to see the question.](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.gb97c1ea942_0_144)
-* [Illustration of polling question](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.g114c7f0866b_0_162)
+* ![Just click me to see the question.](https://awesomescreenshot.s3.amazonaws.com/image/4263219/37771061-b8627578a90d1b3c945dc79acb9d672b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20230307%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230307T234856Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=8c04b11b9fdc8ad5943fb4b3aed45b7be98cd31d244261f3740fc0f37ee947d9)
+    * Which method gives the highest correlation?
+        * Linear with Dinucleotide composition
+        * Polynomial with Dinucleotide composition
+        * RBF with Dinucleotide composition
+
+* ![Illustration of polling question](https://awesomescreenshot.s3.amazonaws.com/image/4263219/37771227-70baca69d3ae8fd61476337e71acc1a4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20230307%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230307T235853Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=388c755dff57fb37debd31e38bd1aa6a3d7f2bde6d3e0e10896e85816b3c09f4)
+    * Based on the previous images, which variable seems to be most correlated with gene expression (Exp) in this gene?
+        * Time
+        * Depth
+        * Height
+        * Width
+
     * [Polling question that goes with the illustration above](https://docs.google.com/presentation/d/1txqt9HGu2hrn3wmMHy9CtPVJYe_vhiI2/edit#slide=id.g114c7f0866b_0_170)
