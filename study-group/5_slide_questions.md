@@ -7,8 +7,8 @@ These questions are based on the slides we went over in class.
 * [Tokenization in text](#tokenization-and-similarity-metrics)
 * [Similarity metrics](#tokenization-and-similarity-metrics)
 * [Word-embeddings: TF-IDF, Word2Vec](#word-embeddings)
-* Kmers (bio n-grams)
-* One-hot encoding
+* [Kmers (bio n-grams)](#kmers-and-one-hot-encoding)
+* [One-hot encoding](#kmers-and-one-hot-encoding)
 * DNA2Vec
 
 
