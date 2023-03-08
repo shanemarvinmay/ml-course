@@ -80,6 +80,51 @@ How can you take a word vectors to find similar meaning?
 (Note)[How to use Word2Vec in code (and following slides)](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_153)
 
 
+(hard) How to get vector embedding for whole text?
+* [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_123)
+
+
+What is FastText?
+* What is the advantage of FastText? How does it do it?
+* [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_97)
+
+
+What is Doc2Vec?
+* What is it's advantage over Word2Vec and FastText?
+* [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_102)
+
+
+How do you pass embeddings in to Neural Net?
+* [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_147)
+
+
+All text representations are inherently biased based on what they saw in training data (True/False).
+* [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_107)
+
+
+### Kmers and One-Hot Encoding
+
+
+(Note) Hamming distance between two strings of equal length is the number of positions at which the corresponding symbols are different.
+
+
+What is a **Kmer**?
+* How can you tell how many there will be?
+* [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20805386c74_0_5)
+
+
+(Note) Jaccard can be used with kmers.
+
+
+### Polling Questions
+* You will need to create a Doc2Vec for your document corpus since there is no universal Doc2Vec model that applies to all corpus (True/Fase)
+    * [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_190)
+* Does DNA2Vec cosine similarity correspond well to Needleman-Wunsch sequence sim score?
+    * [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20888ddd21f_0_224)
+* (NO IDEA) In this paper k-mers are used for clustering sequences and a sequence can belong to >1 cluster (True/False).
+    * [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20805386c74_0_544)
+* (NO IDEA) What value would “GPT” have?
+    * [Answer](https://docs.google.com/presentation/d/1d8-Yuped-SUHB-hi3-PCCSjzvntMtECClr4slO7e3eE/edit#slide=id.g20805386c74_0_587)
 
 
 ### I don't understand the following
