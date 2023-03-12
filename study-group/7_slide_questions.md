@@ -21,7 +21,7 @@ How much data does DL need?
 * [Answer](https://docs.google.com/presentation/d/1kekYHlQXoNWdipwtXcEBBQSXrdX5ziyor8hPReiehmk/edit#slide=id.g11a19a96e65_0_189)
 
 What are the steps to classical machine learning?
-    * [Answer](https://docs.google.com/presentation/d/1kekYHlQXoNWdipwtXcEBBQSXrdX5ziyor8hPReiehmk/edit#slide=id.gca12e3219a_0_2291)
+* [Answer](https://docs.google.com/presentation/d/1kekYHlQXoNWdipwtXcEBBQSXrdX5ziyor8hPReiehmk/edit#slide=id.gca12e3219a_0_2291)
 
 What are the three basic elements of neural modeling?
 * [Answer](https://docs.google.com/presentation/d/1kekYHlQXoNWdipwtXcEBBQSXrdX5ziyor8hPReiehmk/edit#slide=id.gca3d21e639_0_292)
@@ -37,8 +37,6 @@ What are 3 types of linear models based on signal?
 * [Answer](https://docs.google.com/presentation/d/1kekYHlQXoNWdipwtXcEBBQSXrdX5ziyor8hPReiehmk/edit#slide=id.gca12e3219a_0_2464)
 
 ? How is a preceptor different than a classifier ?
-
-
 
 
 ### Polling Questions
